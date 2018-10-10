@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="AGENT_GROUP" title="AGENT_GROUP">
+<HOSTG_UNIX id="1003564" link="0" name="DSGOMS_AGENT_GROUP"/>
+</FOLD>
+</FolderStruct>
+<HOSTG name="DSGOMS_AGENT_GROUP">
+<HEADER state="1">
+<Title>DSGOMS_AGENT_GROUP</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<HOSTG state="1">
+<HostAttrType>UNIX</HostAttrType>
+<CITName/>
+<ModeA>0</ModeA>
+<ModeF>0</ModeF>
+<ModeN>0</ModeN>
+<ModeL>1</ModeL>
+<ModeX>0</ModeX>
+<MaxParallel>9999</MaxParallel>
+<Enforced>0</Enforced>
+<Members>
+<row Archive1="*" Archive2="*" HW="*" Icon="HOST" Icontype="" Name="HD3SOMS05LX" Role="*" SW="*" SWVers="*" Type="H" Version="*"/>
+<row Archive1="*" Archive2="*" HW="*" Icon="HOST" Icontype="" Name="HD3SOMS06LX" Role="*" SW="*" SWVers="*" Type="H" Version="*"/>
+</Members>
+</HOSTG>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</HOSTG>
+</uc-export>

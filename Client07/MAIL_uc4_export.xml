@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="MAIL" title="MAIL">
+<CALL id="1003722" link="0" name="HBC_DIGITAL_OMS_SUPPORT"/>
+</FOLD>
+</FolderStruct>
+<CALL name="HBC_DIGITAL_OMS_SUPPORT">
+<XHEADER state="1">
+<Title>HBC_DIGITAL_OMS_SUPPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType>3</OH_SubType>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_CALL state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<External1>0</External1>
+<External2>0</External2>
+<EscTime>0</EscTime>
+<Object/>
+<AutoDeact>0</AutoDeact>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<UC4Priority>0</UC4Priority>
+<Priority>1|High</Priority>
+<Type>3|E-mail</Type>
+<ActAtRun>0</ActAtRun>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>1</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_CALL>
+<NOTIFICATION state="1">
+<Subject>&lt;Will be replaced by Process.&gt;</Subject>
+<Text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;style type="text/css"&gt;
+.c1 {
+  background-color: #ECAC00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 2px 10px 2px 10px;
+}
+.c2 {
+  background-color: #ECECEC;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.c3 {
+  background-color: #B2B2B2;
+  font-size: 1.5em;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table style="border:1px solid #000000;box-shadow:8px 8px 8px #666;" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="c3"&gt;&amp;ht&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding:0;"&gt;	
+&lt;table border = "0" rules = "none" cellspacing="0" cellpadding="0" width="100%"&gt;
+&lt;colgroup width="120px"/&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c1#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$SYSTEM#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c2#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$CLIENT# (&amp;$CLIENT_DESC#)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c3#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NAME&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c4#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NR&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c5#&lt;/td&gt;&lt;td class="c2"&gt;&amp;statustext# (&amp;UC_CAUSE_STATE)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c6#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_RETCODE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c7#&lt;/td&gt;&lt;td class="c2"&gt;&amp;date# &amp;time#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c8#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentname#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c9#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parenttyp#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;ca#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentnr#&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="padding: 5px 5px 5px 5px;"align="center"&gt;&lt;a href="http://www.automic.com"&gt;&lt;img border="0" src="http://cdn2.hubspot.net/hub/241294/file-205974691-png/Images/Logos_&amp;_Icons/Automic_logo.png" width="183" height="70" alt="UC4" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;</Text>
+<AttachReports>&amp;UC_CAUSE_NR</AttachReports>
+<ReportSrcDb>1</ReportSrcDb>
+<ReportSrcExt>0</ReportSrcExt>
+<ReportSrcAll>0</ReportSrcAll>
+<AttachFile/>
+</NOTIFICATION>
+<CALL state="1">
+<Cond>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="HBC_DIGITAL_OMS_SUPPORT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="NKORANDLA/INTRANET" id="0"/>
+</Cond>
+</CALL>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>3</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:read &UC_CAUSE_NAME,,,
+:read &UC_CAUSE_NR,,,
+:read &UC_CAUSE_STATE,,,
+:read &UC_CAUSE_RETCODE,,,
+!
+:set &lang# = SYS_USER_LANGUAGE
+:if &lang# = 'E'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &ht = "&$SYSTEM# has important information for you!"
+:  set &c1#="System name"
+:  set &c2#="Client"
+:  set &c3#="Object"
+:  set &c4#="Run Id"
+:  set &c5#="State (Text)"
+:  set &c6#="Return code"
+:  set &c7#="Time"
+:  set &c8#="Parent object"
+:  set &c9#="Parent type"
+:  set &cA#="Parent run Id"
+:endif
+!
+:if &lang# = 'D'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Mandant:'&$client#'"
+:  set &ht = "&$SYSTEM# hat eine wichtige Information für Sie!"
+:  set &c1#="System Name"
+:  set &c2#="Mandant"
+:  set &c3#="Objekt"
+:  set &c4#="Run Id"
+:  set &c5#="Status (Text)"
+:  set &c6#="Return Code"
+:  set &c7#="Uhrzeit"
+:  set &c8#="Parent Objekt"
+:  set &c9#="Parent Typ"
+:  set &cA#="Parent Run Id"
+:endif
+!
+:if &lang# = 'F'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &ht = "Une erreur s'est produite!"
+:  set &c1#="System"
+:  set &c2#="Client"
+:  set &c3#="Objet"
+:  set &c4#="Run Id"
+:  set &c5#="Statut"
+:  set &c6#="Retcode"
+:  set &c7#="Heure"
+:  set &c8#="Parent Objet"
+:  set &c9#="Parent Type"
+:  set &cA#="Parent Run Id"
+:endif
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &date# = SYS_DATE_PHYSICAL('YYYY-MM-DD')
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</CALL>
+</uc-export>
