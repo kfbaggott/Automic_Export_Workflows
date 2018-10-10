@@ -1,0 +1,1928 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="USERS" title="">
+<USRG id="1004161" link="0" name="OMSSUPPORT"/>
+<USER id="1004154" link="0" name="NKORANDLA/INTRANET"/>
+<USRG id="1004160" link="0" name="INFRA"/>
+<USER id="1004164" link="0" name="C998420/INTRANET"/>
+<USER id="1004165" link="0" name="C998809/INTRANET"/>
+<USER id="1004209" link="0" name="MANISHKANT/INTRANET"/>
+<LOGIN id="1004220" link="0" name="AUTADMIN"/>
+<USER id="1014018" link="0" name="VNDAKAMIREDDY/INTRANET"/>
+<USER id="1006132" link="0" name="VNDDVIGNESWARI/INTRANET"/>
+<USER id="1005810" link="0" name="KBAGGOTT/INTRANET"/>
+<USER id="1004513" link="0" name="HBC_DIGITAL_OMS_SUPPORT/INTRANET"/>
+<USER id="1004514" link="0" name="Q197306/INTRANET"/>
+<USER id="1004515" link="0" name="Q206961/INTRANET"/>
+<USER id="1004516" link="0" name="Q254048/INTRANET"/>
+<USER id="1004517" link="0" name="SYERUVA/INTRANET"/>
+<USER id="1004526" link="0" name="VPUROHIT/INTRANET"/>
+<USER id="1011266" link="0" name="H319245/INTRANET"/>
+<USER id="1026024" link="0" name="MCLEARY/INTRANET"/>
+<USER id="1005907" link="0" name="RBANIK2/INTRANET"/>
+<USER id="1005912" link="0" name="SUNGERJR/INTRANET"/>
+<USER id="1005915" link="0" name="HDESAI/INTRANET"/>
+<USER id="1011235" link="0" name="VNDVGANESH/INTRANET"/>
+</FOLD>
+</FolderStruct>
+<USRG name="OMSSUPPORT">
+<HEADER state="1">
+<Title>OMS-Support</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<UACL state="1">
+<Rights>
+<row AL="2|2 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>0</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USRG>
+<USER name="NKORANDLA/INTRANET">
+<HEADER state="1">
+<Title>Naveen Korandla</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Naveen</FirstName>
+<LastName>Korandla</LastName>
+<EMail1>Naveen_Korandla@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Naveen Korandla,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USRG name="INFRA">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>0</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USRG>
+<USER name="C998420/INTRANET">
+<HEADER state="1">
+<Title>Sudarshan Mukherjee</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Sudarshan</FirstName>
+<LastName>Mukherjee</LastName>
+<EMail1>Sudarshan.Mukherjee@partners.hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="C998809/INTRANET">
+<HEADER state="1">
+<Title>Dheepan Tamilarasu</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Dheepan</FirstName>
+<LastName>Tamilarasu</LastName>
+<EMail1>dheepan.tamilarasu@partners.hbc.ca</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>1</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="MANISHKANT/INTRANET">
+<HEADER state="1">
+<Title>Manish Kant</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Manish</FirstName>
+<LastName>Kant</LastName>
+<EMail1>Manish_Kant@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Manish Kant,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<LOGIN name="AUTADMIN">
+<HEADER state="1">
+<Title>AutAdmin</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<LOGIN state="1">
+<Logins>
+<row Host="*" Login="autadmin" Mod="1" Pass="" Type="UNIX"/>
+<row Host="HD3SOMS01LX" Login="autadmin" Mod="1" Pass="" Type="UNIX"/>
+<row Host="HD3SOMS02LX" Login="autadmin" Mod="1" Pass="" Type="UNIX"/>
+<row Host="HD3SOMS03LX" Login="autadmin" Mod="1" Pass="" Type="UNIX"/>
+<row Host="HD3SOMS04LX" Login="autadmin" Mod="1" Pass="" Type="UNIX"/>
+</Logins>
+</LOGIN>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</LOGIN>
+<USER name="VNDAKAMIREDDY/INTRANET">
+<HEADER state="1">
+<Title>Anvesh K</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Anvesh</FirstName>
+<LastName>Kamireddy-Vendor</LastName>
+<EMail1>Anvesh_Kamireddy-Vendor@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Anvesh Kamireddy-Vendor,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>0</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="VNDDVIGNESWARI/INTRANET">
+<HEADER state="1">
+<Title>Divya</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Divya</FirstName>
+<LastName>Vigneswari-Vendor</LastName>
+<EMail1>Divya.Vigneswari-Vendor@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Divya Vigneswari-Vendor,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>0</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="KBAGGOTT/INTRANET">
+<HEADER state="1">
+<Title>Kim Baggott</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Kim</FirstName>
+<LastName>Baggott</LastName>
+<EMail1>Kim.Baggott@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Kim Baggott,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="HBC_DIGITAL_OMS_SUPPORT/INTRANET">
+<HEADER state="1">
+<Title>HBC_DIGITAL_OMS_SUPPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>OMS</FirstName>
+<LastName>Digital Support</LastName>
+<EMail1>HBCDigitalOMSSupport@saksinc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>0</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members/>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="Q197306/INTRANET">
+<HEADER state="1">
+<Title>Arnold Hart</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Arnold</FirstName>
+<LastName>Hart</LastName>
+<EMail1>arnold.hartii@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>1</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="Q206961/INTRANET">
+<HEADER state="1">
+<Title>Ajay Raj</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Ajay</FirstName>
+<LastName>Raj</LastName>
+<EMail1>ajay.raj@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>1</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="Q254048/INTRANET">
+<HEADER state="1">
+<Title>ShreeNaresh Maganti</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>ShreeNaresh</FirstName>
+<LastName>Maganti</LastName>
+<EMail1>shreenaresh.maganti@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>1</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="SYERUVA/INTRANET">
+<HEADER state="1">
+<Title>Siva Reddy Yeruva</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Siva</FirstName>
+<LastName>Yeruva</LastName>
+<EMail1>sivareddy_yeruva@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>0</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="VPUROHIT/INTRANET">
+<HEADER state="1">
+<Title>Vimal Purohit</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Vimal</FirstName>
+<LastName>Purohit</LastName>
+<EMail1>Vimal_Purohit@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Vimal Purohit,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="H319245/INTRANET">
+<HEADER state="1">
+<Title>Naveen Korandla</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Naveen</FirstName>
+<LastName>Korandla II</LastName>
+<EMail1>Naveen_Korandla@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Naveen Korandla II,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>0</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="MCLEARY/INTRANET">
+<HEADER state="1">
+<Title>Madeline Cleary</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Madeline</FirstName>
+<LastName>Cleary</LastName>
+<EMail1>Madeline.Cleary@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Madeline Cleary,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="RBANIK2/INTRANET">
+<HEADER state="1">
+<Title>Rajib Banik</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Rajib</FirstName>
+<LastName>Banik</LastName>
+<EMail1>Rajib_Banik@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName/>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>0</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>1</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members/>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="SUNGERJR/INTRANET">
+<HEADER state="1">
+<Title>Steve Unger Jr</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Steve</FirstName>
+<LastName>Unger Jr</LastName>
+<EMail1>Steve_UngerJr@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Steve Unger Jr,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>1</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>0</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004160" v0="INFRA" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="HDESAI/INTRANET">
+<HEADER state="1">
+<Title>Harsh Desai</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Harsh</FirstName>
+<LastName>Desai</LastName>
+<EMail1>Harsh_Desai@s5a.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Harsh Desai,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights>
+<row AL="1|1 " B1="1" B2="1" B3="1" B4="1" B5="1" B6="1" B7="1" B8="1" B9="1" F1="*" F2="*" F3="*" F4="*" F5="*" F6="*" F7="*" F8="*"/>
+</Rights>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>1</B1>
+<B2>1</B2>
+<B4>1</B4>
+<B8>1</B8>
+<B16>1</B16>
+<B32>1</B32>
+<B64>1</B64>
+<B128>1</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>1</B1024>
+<B2048>0</B2048>
+<B4096>1</B4096>
+<B8192>1</B8192>
+<B16384>1</B16384>
+<B32768>1</B32768>
+<B65536>1</B65536>
+<B131072>0</B131072>
+<B262144>1</B262144>
+<B524288>1</B524288>
+<B1048576>1</B1048576>
+<B2097152>1</B2097152>
+<B4194304>1</B4194304>
+<B8388608>1</B8388608>
+<B16777216>1</B16777216>
+<B33554432>0</B33554432>
+<B67108864>1</B67108864>
+<B134217728>1</B134217728>
+<B268435456>1</B268435456>
+<B536870912>1</B536870912>
+<B1073741824>1</B1073741824>
+<B2147483648>1</B2147483648>
+<B4294967296>1</B4294967296>
+<B8589934592>1</B8589934592>
+<B17179869184>1</B17179869184>
+<B34359738368>1</B34359738368>
+<B68719476736>1</B68719476736>
+<B137438953472>1</B137438953472>
+<B274877906944>1</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members/>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+<USER name="VNDVGANESH/INTRANET">
+<HEADER state="1">
+<Title>GANESH</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<USER KDCIgnoreSSO="0" ldap="1" state="1">
+<Active>1</Active>
+<Locked>0</Locked>
+<FirstName>Venkat</FirstName>
+<LastName>Ganesh-Vendor</LastName>
+<EMail1>venkat.ganesh-vendor@hbc.com</EMail1>
+<EMail2/>
+<PwdChange>0</PwdChange>
+<Login/>
+<PwdNeverExpire>0</PwdNeverExpire>
+<IgnoreSSO>0</IgnoreSSO>
+<PwdMustChange>0</PwdMustChange>
+<Ldap>1</Ldap>
+<DstngshdName>CN=Venkat Ganesh-Vendor,CN=Users,DC=INTRANET,DC=SAKSROOT,DC=SAKSINC,DC=com</DstngshdName>
+<CboTimeZone/>
+<ValidTimeFrom/>
+<ValidTimeTo/>
+<ValidTime>0</ValidTime>
+<CaleName/>
+<CaleKeyName/>
+<MultiLogon>0</MultiLogon>
+<EHRefresh>90</EHRefresh>
+<ErrorCnt>0</ErrorCnt>
+</USER>
+<UACL state="1">
+<Rights/>
+</UACL>
+<PRIVILEGES state="1">
+<PrivList>
+<B1>0</B1>
+<B2>0</B2>
+<B4>0</B4>
+<B8>0</B8>
+<B16>0</B16>
+<B32>0</B32>
+<B64>0</B64>
+<B128>0</B128>
+<B256>0</B256>
+<B512>0</B512>
+<B1024>0</B1024>
+<B2048>0</B2048>
+<B4096>0</B4096>
+<B8192>0</B8192>
+<B16384>0</B16384>
+<B32768>0</B32768>
+<B65536>0</B65536>
+<B131072>0</B131072>
+<B262144>0</B262144>
+<B524288>0</B524288>
+<B1048576>0</B1048576>
+<B2097152>0</B2097152>
+<B4194304>0</B4194304>
+<B8388608>0</B8388608>
+<B16777216>0</B16777216>
+<B33554432>0</B33554432>
+<B67108864>0</B67108864>
+<B134217728>0</B134217728>
+<B268435456>0</B268435456>
+<B536870912>0</B536870912>
+<B1073741824>0</B1073741824>
+<B2147483648>0</B2147483648>
+<B4294967296>0</B4294967296>
+<B8589934592>0</B8589934592>
+<B17179869184>0</B17179869184>
+<B34359738368>0</B34359738368>
+<B68719476736>0</B68719476736>
+<B137438953472>0</B137438953472>
+<B274877906944>0</B274877906944>
+<B549755813888>0</B549755813888>
+<B1099511627776>1</B1099511627776>
+<B2199023255552>0</B2199023255552>
+<B4398046511104>0</B4398046511104>
+<B8796093022208>0</B8796093022208>
+</PrivList>
+</PRIVILEGES>
+<USRGU>
+<Members>
+<row id="1004161" v0="OMSSUPPORT" v1="USRG"/>
+</Members>
+</USRGU>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</USER>
+</uc-export>

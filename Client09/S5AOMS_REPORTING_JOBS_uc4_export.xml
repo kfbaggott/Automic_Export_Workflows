@@ -1,0 +1,2116 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="S5AOMS_REPORTING_JOBS" title="S5AOMS_REPORTING_JOBS">
+<JOBS_UNIX id="1016211" link="0" name="SAKS_PRE_ORDER_SUPPLY_EXPIRY_BI_WEEKLY_REPORT"/>
+<JOBS_UNIX id="1005190" link="0" name="KIVADCSTUCKORDERS"/>
+<JOBS_UNIX id="1005549" link="0" name="PACKERS_PERFORM"/>
+<JOBS_UNIX id="1005812" link="0" name="OPENSTORESHIPMENT"/>
+<JOBS_UNIX id="1004648" link="0" name="INVOICELISTSHIPMENTBYSTORE"/>
+<JOBS_UNIX id="1004647" link="0" name="SYSTEM_HEALTH"/>
+<JOBS_UNIX id="1004905" link="0" name="SAKS_OMS_SYSTEM_REPORT"/>
+<JOBS_UNIX id="1027112" link="0" name="SAKS_PACKED_TO_SHIPPED"/>
+<JOBS_UNIX id="1010305" link="0" name="JOBS.UNIX.NEW.2"/>
+<JOBS_UNIX id="1011238" link="0" name="SAKS_OMS_BOPIS_REPORT_06_AM"/>
+<JOBS_UNIX id="1011237" link="0" name="SAKS_OMS_BOPIS_REPORT_10_AM"/>
+<JOBS_UNIX id="1008020" link="0" name="OPEN_ORDERS"/>
+<JOBS_UNIX id="1010104" link="0" name="SAKS_PURGE_YPM_PRICELIST_LINE"/>
+<JOBS_UNIX id="1010114" link="0" name="PURGE_INVENTORY_KEY_ALERTS"/>
+<JOBS_UNIX id="1010115" link="0" name="O5A_PURGE_INVENTORY_KEY_ALERTS"/>
+<JOBS_UNIX id="1011055" link="0" name="SAKS_OFF5_STORE_FULFILLMENT_REPORT"/>
+<JOBS_UNIX id="1011064" link="0" name="SAKS_CANCEL_ORDER_DAILY_REPORT"/>
+</FOLD>
+</FolderStruct>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_PRE_ORDER_SUPPLY_EXPIRY_BI_WEEKLY_REPORT">
+<XHEADER state="1">
+<Title>SAKS_PRE_ORDER_SUPPLY_EXPIRY_BI_WEEKLY_REPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/SAKS_Pre_Order_Supply_Expiry_Bi_Weekly_report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>17</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="KIVADCSTUCKORDERS">
+<XHEADER state="1">
+<Title>KivaDCStuckOrders</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/KIVADCStuckOrders.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>305</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PACKERS_PERFORM">
+<XHEADER state="1">
+<Title>Packers_perform</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/Packers_perform.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>14</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="OPENSTORESHIPMENT">
+<XHEADER state="1">
+<Title>StoreShipment</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/OpenStoreShipment.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute>HBC_DIGITAL_OMS_SUPPORT</MrcExecute>
+<MrcElseE>1</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="INVOICELISTSHIPMENTBYSTORE">
+<XHEADER state="1">
+<Title>InvoiceListShipmentByStore</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/InvoiceListShipmentByStore.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>15</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SYSTEM_HEALTH">
+<XHEADER state="1">
+<Title>SYSTEM_HEALTH</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/system_health.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>19</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_OMS_SYSTEM_REPORT">
+<XHEADER state="1">
+<Title>Saks_OMS_System_Report</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/system_report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute>HBC_DIGITAL_OMS_SUPPORT</MrcExecute>
+<MrcElseE>1</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_PACKED_TO_SHIPPED">
+<XHEADER state="1">
+<Title>SAKS_PACKED_TO_SHIPPED</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/Saks_Packed_To_Shipped.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>120</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="JOBS.UNIX.NEW.2">
+<XHEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|&lt;UNIX&gt;|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login/>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_OMS_BOPIS_REPORT_06_AM">
+<XHEADER state="1">
+<Title>SAKS_OMS_BOPIS_REPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/SAKS_Bopis_Report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>46</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_OMS_BOPIS_REPORT_10_AM">
+<XHEADER state="1">
+<Title>SAKS_OMS_BOPIS_REPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/SAKS_Bopis_Report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>27</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="OPEN_ORDERS">
+<XHEADER state="1">
+<Title>OpenOrders</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/OpenOrders.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>7</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_PURGE_YPM_PRICELIST_LINE">
+<XHEADER state="1">
+<Title>SAKS_PURGE_YPM_PRICELIST_LINE</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/SAKS_PURGE_YPM_PRICELIST_LINE.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>4726</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PURGE_INVENTORY_KEY_ALERTS">
+<XHEADER state="1">
+<Title>Purge_inventory_key_alerts</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/Purge_inventory_key_alerts.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>660</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="O5A_PURGE_INVENTORY_KEY_ALERTS">
+<XHEADER state="1">
+<Title>o5a_Purge_inventory_key_alerts</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/o5a_Purge_inventory_key_alerts.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2046</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_OFF5_STORE_FULFILLMENT_REPORT">
+<XHEADER state="1">
+<Title>Saks_OFF5_Store_Fulfillment_report</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>0</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/Saks_OFF5_Store_Fulfillment_report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>89</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="SAKS_CANCEL_ORDER_DAILY_REPORT">
+<XHEADER state="1">
+<Title>SAKS_CANCEL_ORDER_DAILY_REPORT</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|S5AOMS_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>1</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/OMSS5A/SAKS_cancel_order_daily_report.sh</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>31</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+</uc-export>
