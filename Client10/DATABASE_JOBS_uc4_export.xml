@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="DATABASE_JOBS" title="DATABASE JOBS">
+<PRPT id="1018525" link="0" name="HOST_SCRIPT"/>
+<FOLD name="NON_PROD" title="NON_PROD DB JOBS">
+<JOBS_UNIX id="1018444" link="0" name="S5A_STQA_DB_REFRESH"/>
+<JOBS_UNIX id="1018449" link="0" name="S5A_STQA_DB_REFRESH_STARTNOTIFY"/>
+<JOBS_UNIX id="1018450" link="0" name="S5A_STQA_DB_REFRESH_STOPNOTIFY"/>
+</FOLD>
+<FOLD name="PROD" title="PROD DB Jobs">
+<JOBS_UNIX id="1018517" link="0" name="ALMPRD_GATHER_STATS"/>
+<JOBS_UNIX id="1018518" link="0" name="ALMPRD_JIFFY_HBC_PURGE_DATA"/>
+<JOBS_UNIX id="1018519" link="0" name="PRODSTO_ACTIVATE_STANDBY_DB_IN_DR"/>
+<JOBS_UNIX id="1018520" link="0" name="PRODSTO_DB_ARCH_BACKUP"/>
+<JOBS_UNIX id="1018521" link="0" name="PRODSTO_DB_FULL_BACKUP"/>
+<JOBS_UNIX id="1018522" link="0" name="REFRESH_ALFRESCO_IN_DR"/>
+<JOBS_UNIX id="1018523" link="0" name="PURGE_AUDIT_TABLE"/>
+<JOBS_UNIX id="1018528" link="0" name="PURGE_ALERT_LOGS"/>
+<JOBP id="1018529" link="0" name="PRODSTO_PURGE_ALERT_AUDIT"/>
+<JOBP id="1018530" link="0" name="PRIMSTO_PURGE_ALERT_AUDIT"/>
+</FOLD>
+</FOLD>
+</FolderStruct>
+<PRPT name="HOST_SCRIPT">
+<HEADER state="1">
+<Title>Generic HOST SCRIPT Prompt Set</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<PROMPTDESIGNER state="1">
+<DESIGNER/>
+</PROMPTDESIGNER>
+<PROMPTSETXUI state="1">
+<XUIEDITOR><![CDATA[<dialog height="424" icon="PRPT" id="PRPTS" left="0" top="0" width="441"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="HOST_SCRIPT PROMPT SET"><properties><entry name="text">HOST_SCRIPT PROMPT SET</entry><entry name="modifiable">0</entry></properties><text alt="1" enabled="1" fill="b" focus="0" id="HOST_NAME" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="HOST_NAME" tooltip="" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         
+      <properties>
+        <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
+        <entry name="xmlkey"/>
+        <entry name="xmlpath"/>
+        <entry name="text">HOST_NAME</entry>
+        <entry name="multiline">0</entry>
+        <entry name="multilineIcon">0</entry>
+        <entry name="multiselect">0</entry>
+        <entry name="separator">;</entry>
+        <entry name="len"/>
+        <entry name="quotes"/>
+        <entry name="id">HOST_NAME</entry>
+        <entry name="regex"/>
+        <entry name="inputassistance">0</entry>
+        <entry name="enabled">0</entry>
+        <entry name="required">1</entry>
+        <entry name="upper">0</entry>
+        <entry name="focus">0</entry>
+        <entry name="showaspassword">0</entry>
+        <entry name="tooltip"/>
+        <entry name="modifiable">1</entry>
+        <entry name="customfield"/>
+        <entry name="onchangereset"/>
+        <entry name="resetable">1</entry>
+      <entry name="initvalue"/>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="SCRIPT_NAME" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" separator=";" showaspassword="0" text="SCRIPT_NAME" tooltip="" upper="0" required="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         
+      <properties>
+        <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
+        <entry name="xmlkey"/>
+        <entry name="xmlpath"/>
+        <entry name="text">SCRIPT_NAME</entry>
+        <entry name="multiline">0</entry>
+        <entry name="multilineIcon">0</entry>
+        <entry name="multiselect">0</entry>
+        <entry name="separator">;</entry>
+        <entry name="len"/>
+        <entry name="quotes"/>
+        <entry name="id">SCRIPT_NAME</entry>
+        <entry name="regex"/>
+        <entry name="inputassistance">0</entry>
+        <entry name="enabled">0</entry>
+        <entry name="required">1</entry>
+        <entry name="upper">0</entry>
+        <entry name="focus">0</entry>
+        <entry name="showaspassword">0</entry>
+        <entry name="tooltip"/>
+        <entry name="modifiable">1</entry>
+        <entry name="customfield"/>
+        <entry name="onchangereset"/>
+        <entry name="resetable">1</entry>
+      <entry name="initvalue"/>
+         </properties>
+    </text></readpanel></dialog>]]></XUIEDITOR>
+</PROMPTSETXUI>
+<PROMPTSETDATA state="1">
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><HOST_NAME haslist="0" msgnr="-1" msginsert="" altview="0" promptname="HOST_NAME" ReadFromTable="OPSE"></HOST_NAME><SCRIPT_NAME haslist="0" msgnr="-1" msginsert="" altview="0" promptname="SCRIPT_NAME" ReadFromTable="OPSE"></SCRIPT_NAME></PRPTBOX></PRPTS>]]></DATAEDITOR>
+</PROMPTSETDATA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</PRPT>
+<JOBS_UNIX AttrType="UNIX" name="S5A_STQA_DB_REFRESH">
+<XHEADER state="1">
+<Title>Saks Short-Term QA (QASTO) DB Refresh</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>ssh oracle@hd1qrc01na.digital.hbc.com &amp;SCRIPT_NAME &amp;SRC_DB &amp;TGT_DB &amp;ASM_HOME_DIR</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;ASM_HOME_DIR" Value="+QASTO_DATA"/>
+<row ERTUsage="0" Name="&amp;SCRIPT_NAME" Value="/oracle/scripts/refresh_qastore.sh"/>
+<row ERTUsage="0" Name="&amp;SRC_DB" Value="PRIMSTO"/>
+<row ERTUsage="0" Name="&amp;TGT_DB" Value="QASTO"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="S5A_STQA_DB_REFRESH_STARTNOTIFY">
+<XHEADER state="1">
+<Title>S5A_STQA_DB_REFRESH_STARTNOTIFY</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+curl -X POST -H "Content-Type: application/json" --data "{\"channel\": \"##s5a_sqa_autoupdates\", \"username\": \"DB Refresh from Slot0 - INITIATED\", \"text\": \" \", \"icon_emoji\": \":db:\"} " https://hooks.slack.com/services/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]]></MSCRI>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="S5A_STQA_DB_REFRESH_STOPNOTIFY">
+<XHEADER state="1">
+<Title>S5A_STQA_DB_REFRESH_STOPNOTIFY</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+curl -X POST -H "Content-Type: application/json" --data "{\"channel\": \"##s5a_sqa_autoupdates\", \"username\": \"DB Refresh from Slot0 - COMPLETED\", \"text\": \" \", \"icon_emoji\": \":db:\"} " https://hooks.slack.com/services/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]]></MSCRI>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="ALMPRD_GATHER_STATS">
+<XHEADER state="1">
+<Title>ALMPRD_GATHER_STATS</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>ssh oracle@sd1mrc10nx.saksdirect.com /oracle/scripts/gather_stats_schemalist.sh ALMPRD JIFFY_HBC</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;DB_NAME" Value="ALMPRD"/>
+<row ERTUsage="0" Name="&amp;SCHEMA_NAME" Value="JIFFY_HBC"/>
+<row ERTUsage="0" Name="&amp;SCRIPT_NAME" Value="/oracle/scripts/gather_stats_schemalist.sh"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="ALMPRD_JIFFY_HBC_PURGE_DATA">
+<XHEADER state="1">
+<Title>ALMPRD_JIFFY_HBC_PURGE_DATA</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|LAT_AGENT_GROUP</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/DB/oracle_ssh.sh &amp;HOSTNAME# &amp;SCRIPT# &amp;DBNAME#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>15</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PRODSTO_ACTIVATE_STANDBY_DB_IN_DR">
+<XHEADER state="1">
+<Title>PRODSTO_ACTIVATE_STANDBY_DB_IN_DR</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|LAT_AGENT_GROUP</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ>EST</TZ>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/DB/oracle_ssh.sh &amp;HOSTNAME# &amp;SCRIPT# &amp;PRIMARY_SID# &amp;STANDBY_SID#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute>NOTIFICATION_JOB_FAILED</MrcExecute>
+<MrcElseE>1</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>51</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="STANDBY_DB_DR_PARMS" name="STANDBY_DB_DR_PARMS" parent="PRPTS" type="PROMPTSET"/>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[Please contact on call DBA.]]></DOC>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PRODSTO_DB_ARCH_BACKUP">
+<XHEADER state="1">
+<Title>PRODSTO DB Archive Log Backup</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|LAT_AGENT_GROUP</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/DB/oracle_ssh.sh &amp;HOSTNAME# &amp;SCRIPT# &amp;DBNAME# &amp;BACKUP_TYPE# &amp;BACKUP_DEST#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>60</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="RMAN_DB_DISK_BACKUP_PARAMETERS" name="RMAN_DB_DISK_BACKUP_PARAMETERS" parent="PRPTS" type="PROMPTSET"/>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PRODSTO_DB_FULL_BACKUP">
+<XHEADER state="1">
+<Title>PRODSTO DB FULL Backup</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|LAT_AGENT_GROUP</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/DB/oracle_ssh.sh &amp;HOSTNAME# &amp;SCRIPT# &amp;DBNAME# &amp;BACKUP_TYPE# &amp;BACKUP_DEST#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>36143</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="RMAN_DB_DISK_BACKUP_PARAMETERS" name="RMAN_DB_DISK_BACKUP_PARAMETERS" parent="PRPTS" type="PROMPTSET"/>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="REFRESH_ALFRESCO_IN_DR">
+<XHEADER state="1">
+<Title>Refresh Alfresco Schema in Saks DR from Saks Prod</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|LAT_AGENT_GROUP</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ>EST</TZ>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/scripts/DB/oracle_ssh.sh &amp;HOSTNAME# &amp;SCRIPT#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute>NOTIFICATION_JOB_FAILED</MrcExecute>
+<MrcElseE>1</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1314</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="AB_HOST_SCRIPT" name="AB_HOST_SCRIPT" parent="PRPTS" type="PROMPTSET"/>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[# Script for refreshing ALFRESCO42 schema in Saks DR from Saks Prod
+#
+# !!!!!! Alfresco Application has to be stopped in Saks DR before exeucting this script, else this will FAIL !!!!!
+#
+#
+]]></DOC>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PURGE_AUDIT_TABLE">
+<XHEADER state="1">
+<Title>Purge Audit Table</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|&lt;UNIX&gt;|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login/>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT" ontop="1">
+<PRPTBOX promptset="HOST_SCRIPT" prptmode="1"/>
+</PROMPTSET>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="PURGE_ALERT_LOGS">
+<XHEADER state="1">
+<Title>Purge/Rotate Database Alert logs</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|&lt;UNIX&gt;|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login/>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT" ontop="1">
+<PRPTBOX promptset="HOST_SCRIPT" prptmode="1"/>
+</PROMPTSET>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBP AllowExternal="1" name="PRODSTO_PURGE_ALERT_AUDIT">
+<XHEADER state="1">
+<Title>PRODSTO Alert Log &amp; Audit Table Purge</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue/>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>0</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PURGE_ALERT_LOGS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT">
+<PRPTBOX promptset="HOST_SCRIPT">
+<HOST_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME" promptsetname="HOST_SCRIPT"/>
+<HOST_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME#" promptsetname="HOST_SCRIPT">sd1prc10na.saksdirect.com</HOST_NAMEs.00>
+<SCRIPT_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME" promptsetname="HOST_SCRIPT"/>
+<SCRIPT_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME#" promptsetname="HOST_SCRIPT">/oracle/scripts/purge_alert.sh</SCRIPT_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PURGE_AUDIT_TABLE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT">
+<PRPTBOX promptset="HOST_SCRIPT">
+<HOST_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME" promptsetname="HOST_SCRIPT"/>
+<SCRIPT_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME" promptsetname="HOST_SCRIPT"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>0</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName/>
+<WFName/>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="PRIMSTO_PURGE_ALERT_AUDIT">
+<XHEADER state="1">
+<Title>PRIMSTO Alert Log &amp; Audit Table Purge</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue/>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>0</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PURGE_AUDIT_TABLE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT">
+<PRPTBOX promptset="HOST_SCRIPT">
+<HOST_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME" promptsetname="HOST_SCRIPT"/>
+<HOST_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME#" promptsetname="HOST_SCRIPT">sd1mrc10na.saksdirect.com</HOST_NAMEs.00>
+<SCRIPT_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME" promptsetname="HOST_SCRIPT"/>
+<SCRIPT_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME#" promptsetname="HOST_SCRIPT">/oracle/scripts/purge_audit_table.sh</SCRIPT_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PURGE_ALERT_LOGS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT">
+<PRPTBOX promptset="HOST_SCRIPT">
+<HOST_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME" promptsetname="HOST_SCRIPT"/>
+<HOST_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME#" promptsetname="HOST_SCRIPT">sd1mrc10na.saksdirect.com</HOST_NAMEs.00>
+<SCRIPT_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME" promptsetname="HOST_SCRIPT"/>
+<SCRIPT_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME#" promptsetname="HOST_SCRIPT">/oracle/scripts/purge_alert.sh</SCRIPT_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="JOBS" Object="PURGE_ALERT_LOGS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="HOST_SCRIPT" name="HOST_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="HOST_SCRIPT">
+<PRPTBOX promptset="HOST_SCRIPT">
+<HOST_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME" promptsetname="HOST_SCRIPT"/>
+<HOST_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="HOST_NAME#" promptsetname="HOST_SCRIPT">sd1mrc10nb.saksdirect.com</HOST_NAMEs.00>
+<SCRIPT_NAME ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME" promptsetname="HOST_SCRIPT"/>
+<SCRIPT_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="SCRIPT_NAME#" promptsetname="HOST_SCRIPT">/oracle/scripts/purge_alert.sh</SCRIPT_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="5" Lnr="5" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="4" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>0</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName/>
+<WFName/>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+</uc-export>

@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="EXECUTABLES" title="">
+<JOBS_UNIX id="1013015" link="0" name="SLEEP5"/>
+<JOBS_UNIX id="1014019" link="0" name="DAILYPUB_NOTIFYSTART"/>
+<JOBS_UNIX id="1014020" link="0" name="DAILYPUB_NOTIFYSTOP"/>
+<JOBP id="1014021" link="0" name="LAT_PRICE_LOAD_AND_PUB_NIGHTLY"/>
+<CALL id="1026061" link="0" name="CALL.MAIL.HTML.NEW.1"/>
+<CALL id="1026062" link="0" name="GREEN_NOTIFICATION_INFRA_DATA_QA_MERCH"/>
+<CALL id="1026063" link="0" name="RED_NOTIFICATION_INFRA_DATA_QA_MERCH"/>
+<CALL id="1025154" link="0" name="GREEN_NOTIFICATION_PRICE_LOAD"/>
+<JOBS_UNIX id="1027022" link="0" name="BAY_BASELINE_NOTIFY_STOP"/>
+<JOBS_UNIX id="1027021" link="0" name="BAY_BASELINE_NOTIFY_START"/>
+<JOBS_UNIX id="1027026" link="0" name="BAY_BASELINE_NOTIFY_FAIL"/>
+</FOLD>
+</FolderStruct>
+<JOBS_UNIX AttrType="UNIX" name="SLEEP5">
+<XHEADER state="1">
+<Title>SLEEP5</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1PDW04LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>1</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-sh</Shell>
+<ShellOptions/>
+<Com>touch ramya_test.txt</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="DAILYPUB_NOTIFYSTART">
+<XHEADER state="1">
+<Title>DAILYPUB_NOTIFYSTART</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/InfraOps/pubEmails/dailyPub_Notify.sh BAY start</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="DAILYPUB_NOTIFYSTOP">
+<XHEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/InfraOps/pubEmails/dailyPub_Notify.sh BAY stop</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBP AllowExternal="1" name="LAT_PRICE_LOAD_AND_PUB_NIGHTLY">
+<XHEADER state="1">
+<Title>LAT_PRICE_LOAD_AND_PUB_NIGHTLY</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue/>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>0</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="LAT_PRODUCTION_DAILY_PRICE_LOAD" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS">
+<condition active="1" id="CHECK ACTIVITIES" once="0" type="C" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="LAT_PRICE_PUB_PROD"/>
+<param altview="0" name="XC_P02" type="V" value="&gt;"/>
+<param altview="0" name="XC_P03" type="V" value="0"/>
+<param altview="0" name="XC_P04" type="V" value="ANY_RUNNING"/>
+</params>
+<when active="1" id="CHECK ACTIVITIES" once="0" type="W" uiinfo="">
+<action active="1" id="RE-EVALUATE IN" once="0" type="A" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="5"/>
+</params>
+</action>
+</when>
+<else active="1" id="CHECK ACTIVITIES" once="0" type="E" uiinfo="">
+<action active="1" id="RUN TASK" once="0" type="A" uiinfo="">
+<params/>
+</action>
+</else>
+</condition>
+</conditions>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS">
+<condition active="1" id="STATUS" once="0" type="C" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="ENDED_NOT_OK"/>
+</params>
+<when active="1" id="STATUS" once="0" type="W" uiinfo="">
+<action active="1" id="EXECUTE OBJECT" once="0" type="A" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="RED_NOTIFICATION_INFRA_DATA_QA_MERCH"/>
+<param altview="0" name="XC_P02" type="S" value="#915032:getobjprompt:0:3"/>
+<param altview="0" name="XC_P03" type="V" value="##911011"/>
+<param altview="0" name="XC_P04" type="V" value=""/>
+</params>
+</action>
+</when>
+</condition>
+</conditions>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="LAT_PRICE_PUB_PROD" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="1" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS">
+<condition active="1" id="STATUS" once="0" type="C" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="ANY_OK"/>
+</params>
+<when active="1" id="STATUS" once="0" type="W" uiinfo="">
+<action active="1" id="EXECUTE OBJECT" once="0" type="A" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="GREEN_NOTIFICATION_INFRA_DATA_QA_MERCH"/>
+<param altview="0" name="XC_P02" type="S" value="#915032:getobjprompt:0:3"/>
+<param altview="0" name="XC_P03" type="V" value="##911011"/>
+<param altview="0" name="XC_P04" type="V" value=""/>
+</params>
+</action>
+</when>
+<else active="1" id="STATUS" once="0" type="E" uiinfo="">
+<action active="1" id="EXECUTE OBJECT" once="0" type="A" uiinfo="">
+<params>
+<param altview="0" name="XC_P01" type="V" value="RED_NOTIFICATION_INFRA_DATA_QA_MERCH"/>
+<param altview="0" name="XC_P02" type="S" value="#915032:getobjprompt:0:3"/>
+<param altview="0" name="XC_P03" type="V" value="##911011"/>
+<param altview="0" name="XC_P04" type="V" value=""/>
+</params>
+</action>
+</else>
+</condition>
+</conditions>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="5" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1847</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>0</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName/>
+<WFName/>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<CALL name="CALL.MAIL.HTML.NEW.1">
+<XHEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType>3</OH_SubType>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_CALL state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<External1>0</External1>
+<External2>0</External2>
+<EscTime>0</EscTime>
+<Object/>
+<AutoDeact>0</AutoDeact>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<UC4Priority>0</UC4Priority>
+<Priority>1|High</Priority>
+<Type>3|E-mail</Type>
+<ActAtRun>0</ActAtRun>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>1</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_CALL>
+<NOTIFICATION state="1">
+<Subject>&lt;Will be replaced by Process.&gt;</Subject>
+<Text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;style type="text/css"&gt;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}  
+.c1 {
+  font-size: 0.875em;
+  padding: 2px 10px 2px 10px;
+  text-align: right;
+  width: 30%;
+}
+.c2 {
+  font-size: 0.875em;
+  padding-left: 5px;
+  padding-right: 5px;
+  width 70%;
+}
+.c3 {
+  background-color: #E7E7E7;
+  font-size: 1.000em;
+  font-weight: bold;  
+  padding: 14px;
+  border-bottom: 1px solid #C6C3C6;
+}
+.c4 {
+  font-size: 0.875em;
+  font-weight: bold;  
+  padding: 14px;
+}
+.c5 {
+  font-size: 0.750em; 
+  text-align: center;
+}
+table { 
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table td {
+    vertical-align: top;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table style="border: 2px solid #000000;" cellspacing="0" cellpadding="0" width="500" align="center"&gt;
+  &lt;tr style="background-color: #181C18; height:70px; vertical-align: middle;"&gt;
+       &lt;td style="vertical-align: middle; padding-left:14px;"&gt;&lt;img src="https://downloads.automic.com/jart/prj3/dlc/resources/notification/Logo.png" align="left" alt="Automic"&gt;&lt;/td&gt;
+       &lt;td style="vertical-align: middle;"&gt;&lt;img src="https://downloads.automic.com/jart/prj3/dlc/resources/notification/login_header_background.png" align="right" alt="Automic"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td colspan="2" class="c3"&gt;&amp;tt&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td colspan="2" class="c4"&gt;&amp;ht&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td colspan="2" style="padding:0;"&gt;  
+  &lt;table width="500"&gt;
+   &lt;colgroup width="120px"&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c1#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$SYSTEM#&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c2#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$CLIENT# (&amp;$CLIENT_DESC#)&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c3#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NAME&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c4#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NR&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c5#&lt;/td&gt;&lt;td class="c2"&gt;&amp;statustext# (&amp;UC_CAUSE_STATE)&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c6#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_RETCODE&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c7#&lt;/td&gt;&lt;td class="c2"&gt;&amp;date# &amp;time#&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c8#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentname#&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;c9#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parenttyp#&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&amp;ca#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentnr#&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td class="c1"&gt;&lt;p/&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/table&gt;
+&lt;p class="c5"&gt;&amp;copy; Automic Software GmbH&lt;/p&gt;
+&lt;/body&gt;</Text>
+<AttachReports>&amp;UC_CAUSE_NR</AttachReports>
+<ReportSrcDb>1</ReportSrcDb>
+<ReportSrcExt>0</ReportSrcExt>
+<ReportSrcAll>0</ReportSrcAll>
+<AttachFile/>
+</NOTIFICATION>
+<CALL state="1">
+<Cond/>
+</CALL>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>222</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:read &UC_CAUSE_NAME,,,
+:read &UC_CAUSE_NR,,,
+:read &UC_CAUSE_STATE,,,
+:read &UC_CAUSE_RETCODE,,,
+!
+:set &lang# = SYS_USER_LANGUAGE
+:if &lang# = 'E'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &tt = "Notification"
+:  set &ht = "&$SYSTEM# has important information for you!"
+:  set &c1#="System name"
+:  set &c2#="Client"
+:  set &c3#="Object"
+:  set &c4#="Run Id"
+:  set &c5#="State (Text)"
+:  set &c6#="Return code"
+:  set &c7#="Time"
+:  set &c8#="Parent object"
+:  set &c9#="Parent type"
+:  set &cA#="Parent run Id"
+:endif
+!
+:if &lang# = 'D'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Mandant:'&$client#'"
+:  set &tt = "Benachrichtigung"
+:  set &ht = "&$SYSTEM# hat eine wichtige Information für Sie!"
+:  set &c1#="System Name"
+:  set &c2#="Mandant"
+:  set &c3#="Objekt"
+:  set &c4#="Run Id"
+:  set &c5#="Status (Text)"
+:  set &c6#="Return Code"
+:  set &c7#="Uhrzeit"
+:  set &c8#="Parent Objekt"
+:  set &c9#="Parent Typ"
+:  set &cA#="Parent Run Id"
+:endif
+!
+:if &lang# = 'F'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &tt = "Notification"
+:  set &ht = "Une erreur s'est produite!"
+:  set &c1#="System"
+:  set &c2#="Client"
+:  set &c3#="Objet"
+:  set &c4#="Run Id"
+:  set &c5#="Statut"
+:  set &c6#="Retcode"
+:  set &c7#="Heure"
+:  set &c8#="Parent Objet"
+:  set &c9#="Parent Type"
+:  set &cA#="Parent Run Id"
+:endif
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &date# = SYS_DATE_PHYSICAL('YYYY-MM-DD')
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</CALL>
+<CALL name="GREEN_NOTIFICATION_INFRA_DATA_QA_MERCH">
+<XHEADER state="1">
+<Title>Covers Success, Start and End Scenarios (QA, DATA, INFRA)</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType>3</OH_SubType>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_CALL state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<External1>0</External1>
+<External2>0</External2>
+<EscTime>0</EscTime>
+<Object/>
+<AutoDeact>0</AutoDeact>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<UC4Priority>0</UC4Priority>
+<Priority>3|Low</Priority>
+<Type>3|E-mail</Type>
+<ActAtRun>0</ActAtRun>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>1</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_CALL>
+<NOTIFICATION state="1">
+<Subject>&lt;Will be replaced by Process.&gt;</Subject>
+<Text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;style type="text/css"&gt;
+.c1 {
+  background-color: #008000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 2px 10px 2px 10px;
+}
+.c2 {
+  background-color: #ECECEC;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.c3 {
+  background-color: #B2B2B2;
+  font-size: 1.5em;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table style="border:1px solid #000000;box-shadow:8px 8px 8px #666;" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="c3"&gt;&amp;ht&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding:0;"&gt;	
+&lt;table border = "0" rules = "none" cellspacing="0" cellpadding="0" width="100%"&gt;
+&lt;colgroup width="120px"/&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c2#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$CLIENT# (&amp;$CLIENT_DESC#)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c3#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NAME&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c5#&lt;/td&gt;&lt;td class="c2"&gt;&amp;statustext# (&amp;UC_CAUSE_STATE)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c7#&lt;/td&gt;&lt;td class="c2"&gt;&amp;date# &amp;time#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c8#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentname#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c9#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parenttyp#&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;</Text>
+<AttachReports>&amp;UC_CAUSE_NR</AttachReports>
+<ReportSrcDb>1</ReportSrcDb>
+<ReportSrcExt>0</ReportSrcExt>
+<ReportSrcAll>0</ReportSrcAll>
+<AttachFile/>
+</NOTIFICATION>
+<CALL state="1">
+<Cond>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="INFRASTRUCTURE_SUPPORT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DATASERVICES" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="QASUPPORT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DSG_SITE_OPS/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="184064/INTRANET" id="0"/>
+</Cond>
+</CALL>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:read &UC_CAUSE_NAME,,,
+:read &UC_CAUSE_NR,,,
+:read &UC_CAUSE_STATE,,,
+:read &UC_CAUSE_RETCODE,,,
+!
+:set &lang# = SYS_USER_LANGUAGE
+:if &lang# = 'E'
+:  put_att SUBJECT = "Info:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &ht = "&$SYSTEM# has important information for you!"
+:  set &c2#="Client"
+:  set &c3#="Object"
+:  set &c5#="State (Text)"
+:  set &c7#="Time"
+:  set &c8#="Parent object"
+:  set &c9#="Parent type"
+:endif
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &date# = SYS_DATE_PHYSICAL('YYYY-MM-DD')
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</CALL>
+<CALL name="RED_NOTIFICATION_INFRA_DATA_QA_MERCH">
+<XHEADER state="1">
+<Title>Covers Critical and Failed Notification scenarios (QA, DATA, INFRA)</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType>3</OH_SubType>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_CALL state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<External1>0</External1>
+<External2>0</External2>
+<EscTime>0</EscTime>
+<Object/>
+<AutoDeact>0</AutoDeact>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<UC4Priority>0</UC4Priority>
+<Priority>1|High</Priority>
+<Type>3|E-mail</Type>
+<ActAtRun>0</ActAtRun>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>1</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_CALL>
+<NOTIFICATION state="1">
+<Subject>&lt;Will be replaced by Process.&gt;</Subject>
+<Text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;style type="text/css"&gt;
+.c1 {
+  background-color: #800000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 2px 10px 2px 10px;
+}
+.c2 {
+  background-color: #ECECEC;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.c3 {
+  background-color: #B2B2B2;
+  font-size: 1.5em;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table style="border:1px solid #000000;box-shadow:8px 8px 8px #666;" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="c3"&gt;&amp;ht&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding:0;"&gt;	
+&lt;table border = "0" rules = "none" cellspacing="0" cellpadding="0" width="100%"&gt;
+&lt;colgroup width="120px"/&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c2#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$CLIENT# (&amp;$CLIENT_DESC#)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c3#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NAME&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c5#&lt;/td&gt;&lt;td class="c2"&gt;&amp;statustext# (&amp;UC_CAUSE_STATE)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c7#&lt;/td&gt;&lt;td class="c2"&gt;&amp;date# &amp;time#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c8#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentname#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c9#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parenttyp#&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;</Text>
+<AttachReports>&amp;UC_CAUSE_NR</AttachReports>
+<ReportSrcDb>1</ReportSrcDb>
+<ReportSrcExt>0</ReportSrcExt>
+<ReportSrcAll>0</ReportSrcAll>
+<AttachFile/>
+</NOTIFICATION>
+<CALL state="1">
+<Cond>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="184064/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="QASUPPORT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="INFRASTRUCTURE_SUPPORT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DATASERVICES" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DATA_MANAGEMENT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="INFRAOPS/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DSG_SITE_OPS/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="AYOBBI/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="HBC_DIGITAL_LT_SITE_MERCHANDISING/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="NHASSANEIN/INTRANET" id="0"/>
+</Cond>
+</CALL>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>3</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:read &UC_CAUSE_NAME,,,
+:read &UC_CAUSE_NR,,,
+:read &UC_CAUSE_STATE,,,
+:read &UC_CAUSE_RETCODE,,,
+!
+:set &lang# = SYS_USER_LANGUAGE
+:if &lang# = 'E'
+:  put_att SUBJECT = "Failure:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &ht = "&$SYSTEM# has important information for you!"
+:  set &c2#="Client"
+:  set &c3#="Object"
+:  set &c5#="State (Text)"
+:  set &c7#="Time"
+:  set &c8#="Parent object"
+:  set &c9#="Parent type"
+:endif
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &date# = SYS_DATE_PHYSICAL('YYYY-MM-DD')
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</CALL>
+<CALL name="GREEN_NOTIFICATION_PRICE_LOAD">
+<XHEADER state="1">
+<Title>Covers Success, Start and End Scenarios</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType>3</OH_SubType>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_CALL state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<External1>0</External1>
+<External2>0</External2>
+<EscTime>0</EscTime>
+<Object/>
+<AutoDeact>0</AutoDeact>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<UC4Priority>0</UC4Priority>
+<Priority>3|Low</Priority>
+<Type>3|E-mail</Type>
+<ActAtRun>0</ActAtRun>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<AutoDeactAlways>1</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_CALL>
+<NOTIFICATION state="1">
+<Subject>&lt;Will be replaced by Process.&gt;</Subject>
+<Text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;style type="text/css"&gt;
+.c1 {
+  background-color: #008000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 2px 10px 2px 10px;
+}
+.c2 {
+  background-color: #ECECEC;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.c3 {
+  background-color: #B2B2B2;
+  font-size: 1.5em;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table style="border:1px solid #000000;box-shadow:8px 8px 8px #666;" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="c3"&gt;&amp;ht&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding:0;"&gt;	
+&lt;table border = "0" rules = "none" cellspacing="0" cellpadding="0" width="100%"&gt;
+&lt;colgroup width="120px"/&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c2#&lt;/td&gt;&lt;td class="c2"&gt;&amp;$CLIENT# (&amp;$CLIENT_DESC#)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c3#&lt;/td&gt;&lt;td class="c2"&gt;&amp;UC_CAUSE_NAME&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c5#&lt;/td&gt;&lt;td class="c2"&gt;&amp;statustext# (&amp;UC_CAUSE_STATE)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c7#&lt;/td&gt;&lt;td class="c2"&gt;&amp;date# &amp;time#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c8#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parentname#&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="c1"&gt;&amp;c9#&lt;/td&gt;&lt;td class="c2"&gt;&amp;parenttyp#&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;</Text>
+<AttachReports>&amp;UC_CAUSE_NR</AttachReports>
+<ReportSrcDb>1</ReportSrcDb>
+<ReportSrcExt>0</ReportSrcExt>
+<ReportSrcAll>0</ReportSrcAll>
+<AttachFile/>
+</NOTIFICATION>
+<CALL state="1">
+<Cond>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="JOHNMCCORMICK/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DATA_MANAGEMENT/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DATASERVICES" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="ED/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="RJ/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="HBC_DIGITAL_LT_SITE_MERCHANDISING/INTRANET" id="0"/>
+<row CaleKeyName="" CaleName="" EmailAddress="" USR_Idnr="DSG_SITE_OPS/INTRANET" id="0"/>
+</Cond>
+</CALL>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>2</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:read &UC_CAUSE_NAME,,,
+:read &UC_CAUSE_NR,,,
+:read &UC_CAUSE_STATE,,,
+:read &UC_CAUSE_RETCODE,,,
+!
+:set &lang# = SYS_USER_LANGUAGE
+:if &lang# = 'E'
+:  put_att SUBJECT = "Info:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&$client#'"
+:  set &ht = "&$SYSTEM# has important information for you!"
+:  set &c2#="Client"
+:  set &c3#="Object"
+:  set &c5#="State (Text)"
+:  set &c7#="Time"
+:  set &c8#="Parent object"
+:  set &c9#="Parent type"
+:endif
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &date# = SYS_DATE_PHYSICAL('YYYY-MM-DD')
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</CALL>
+<JOBS_UNIX AttrType="UNIX" name="BAY_BASELINE_NOTIFY_STOP">
+<XHEADER state="1">
+<Title>BAY_BASELINE_NOTIFY_STOP</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/InfraOps/pubEmails/baseline_Notify.sh BAY stop &amp;$PROCESSOR#</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;EMAILS" Value="spereira@thoughtworks.com"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="BAY_BASELINE_NOTIFY_START">
+<XHEADER state="1">
+<Title>BAY_BASELINE_NOTIFY_START</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/InfraOps/pubEmails/baseline_Notify.sh BAY start &amp;$PROCESSOR# &amp;TIME</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;TIME" Value="40"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+<JOBS_UNIX AttrType="UNIX" name="BAY_BASELINE_NOTIFY_FAIL">
+<XHEADER state="1">
+<Title>BAY_BASELINE_NOTIFY_FAIL</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|HD1MUTL08LX|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>0</ShellScript>
+<Command>1</Command>
+<Priority>0</Priority>
+<Shell>-bash</Shell>
+<ShellOptions/>
+<Com>/home/autadmin/InfraOps/pubEmails/baseline_Notify.sh BAY fail &amp;$ALIAS# 40 true</Com>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>1</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;EMAILS" Value="spereira@thoughtworks.com"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+</uc-export>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="SLOTS" title="SLOTS">
+<PRPT id="1004756" link="0" name="SLOTS_ENDECA_PRMPT"/>
+<VARA id="1004754" link="0" name="SLOTS_ENDECA_VAR"/>
+<JOBS_UNIX id="1004758" link="0" name="RUN_ENDECA_SLOT_BASELINE"/>
+</FOLD>
+</FolderStruct>
+<PRPT name="SLOTS_ENDECA_PRMPT">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<PROMPTDESIGNER state="1">
+<DESIGNER/>
+</PROMPTDESIGNER>
+<PROMPTSETXUI state="1">
+<XUIEDITOR><![CDATA[<dialog height="109" icon="PRPT" id="PRPTS" left="0" top="0" width="382"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="SLOTS_ENDECA_PRMPT"><properties><entry name="text">SLOTS_ENDECA_PRMPT</entry><entry name="modifiable">0</entry></properties><label fill="b" id="LABEL1s.00" nl="1" text="Select Slot to Run Endeca Baseline" tooltip="" alt="0">
+      <properties>
+        <entry name="text">Select Slot to Run Endeca Baseline</entry>
+        <entry name="id">LABEL1s.00</entry>
+        <entry name="tooltip"/>
+        <entry name="modifiable">1</entry>
+        <entry name="customfield"/>
+      </properties>
+    </label><combo alt="1" dynamic="0" enabled="1" fill="b" filter="0" focus="0" id="SLOT_DESCs.00" nl="1" strict="1" text="Which Slot:" tooltip="" vtype="i"><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command owner="_self" owneraction="setsource" ownerparam="src|_dialog@src"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptcombolist" target="_self" targetaction="setlist" wait="0"/>
+      
+      
+      
+      <properties>
+        <entry listparam="" name="reference" reftype="STATIC">SLOTS_ENDECA_VAR</entry>
+        <entry name="text">Which Slot:</entry>
+        <entry name="quotes"/>
+        <entry name="id">SLOT_DESCs.00</entry>
+        <entry name="dynamic">0</entry>
+        <entry name="enabled">0</entry>
+        <entry name="focus">0</entry>
+        <entry name="tooltip"/>
+        <entry name="modifiable">1</entry>
+        <entry name="customfield"/>
+      <entry name="xmlkey"/><entry name="xmlpath"/><entry name="initvalue"/><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
+    </combo></readpanel></dialog>]]></XUIEDITOR>
+</PROMPTSETXUI>
+<PROMPTSETDATA state="1">
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><SLOT_DESCs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="SLOT_DESC#" ReadFromTable="OPSE"></SLOT_DESCs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
+</PROMPTSETDATA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</PRPT>
+<VARA OVD_VRName="FREI" data_type="STATIC" name="SLOTS_ENDECA_VAR" replacementmode="2">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType>STATIC</OH_SubType>
+</HEADER>
+<ATTR_VARA state="1">
+<Type>C|Text</Type>
+<lblSource>Static</lblSource>
+<source>STATIC</source>
+<VRName>FREI|Freely selected</VRName>
+<NotFoundErr>0</NotFoundErr>
+<NotFoundDef>1</NotFoundDef>
+<ShareN>0</ShareN>
+<ShareL>0</ShareL>
+<ShareR>0</ShareR>
+<MaxValue_C>1024</MaxValue_C>
+<CheckMax_C>0</CheckMax_C>
+<uppercase>0</uppercase>
+<sortColumn>0</sortColumn>
+<sortDirection>0</sortDirection>
+</ATTR_VARA>
+<VARA state="1">
+<Variables>
+<row Name="DEVSLOT30" Value="devslot30" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT31" Value="devslot31" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT32" Value="devslot32" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT33" Value="devslot33" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT34" Value="devslot34" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT35" Value="devslot35" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="DEVSLOT36" Value="devslot36" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT30" Value="qaslot30" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT31" Value="qaslot31" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT32" Value="qaslot32" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT33" Value="qaslot33" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT34" Value="qaslot34" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT35" Value="qaslot35" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="QASLOT36" Value="qaslot36" Value1="" Value2="" Value3="" Value4=""/>
+</Variables>
+</VARA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</VARA>
+<JOBS_UNIX AttrType="UNIX" name="RUN_ENDECA_SLOT_BASELINE">
+<XHEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<OUTPUTREG state="1">
+<FileReg/>
+</OUTPUTREG>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBS state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<HostDst>|O5_STQA_AGENT_GROUP|HOSTG</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
+<CodeName/>
+<Login>AUTADMIN</Login>
+<IntAccount/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
+<DeactDelay>0</DeactDelay>
+<AutoDeactAlways>1</AutoDeactAlways>
+<AttDialog>0</AttDialog>
+<ActAtRun>0</ActAtRun>
+<Consumption>0</Consumption>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+</ATTR_JOBS>
+<ATTR_UNIX state="1">
+<OutputDb>1</OutputDb>
+<OutputDbErr>0</OutputDbErr>
+<OutputFile>0</OutputFile>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<PRE_SCRIPT mode="1" replacementmode="1" state="1">
+<PSCRI/>
+</PRE_SCRIPT>
+<SCRIPT mode="1" state="1">
+<MSCRI/>
+</SCRIPT>
+<OUTPUTSCAN state="1">
+<Inherit>N</Inherit>
+<filterobjects/>
+<HostFsc/>
+<LoginFsc/>
+</OUTPUTSCAN>
+<POST_SCRIPT mode="1" replacementmode="1" state="1">
+<OSCRI/>
+</POST_SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBS_UNIX>
+</uc-export>

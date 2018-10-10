@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.0.2+hf.2.build.932">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="PRODUCTION" title="">
+<FOLD name="ENDECA" title="">
+<FOLD name="JOBS" title=""/>
+<FOLD name="NOTIFICATIONS" title=""/>
+<FOLD name="PROCESSFLOWS" title=""/>
+<FOLD name="PROMPSETS" title=""/>
+</FOLD>
+</FOLD>
+</FolderStruct>
+</uc-export>
